@@ -44,4 +44,14 @@ export class AuthService {
       'Email address or password provided is incorrect.',
     );
   }
+
+  async validateToken(payload: UserPayload): Promise<User> {
+    const { email } = payload;
+    const user = await this.userService.findByEmail(email);
+    if (user) {
+      return user;
+    }
+
+    throw new UnauthorizedError('Email address provided is incorrect.');
+  }
 }
