@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "auth-jwt-prisma-nestjs",
-    "dateExported": "2023-09-04T01:09:57.037Z",
+    "dateExported": "2023-09-04T02:29:27.976Z",
     "version": "1.1",
     "folders": [
         {
@@ -28,6 +28,29 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"email\": \"user3@email.com\",\n  \"password\": \"User3@123\",\n  \"name\": \"User3 Test\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzg0MjgwLCJleHAiOjE2OTYzNzYyODB9.2K5qzzDrG30Qw-D0xp9hnDga0syeXs_29aYjEztW4VE"
+            },
+            "tests": []
+        },
+        {
+            "_id": "75d9ef93-66a7-4c77-b1f1-b17c41c376aa",
+            "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
+            "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
+            "name": "UPDATE",
+            "url": "http://localhost:3000/users/update/1",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-09-04T02:20:59.627Z",
+            "modified": "2023-09-04T02:24:32.326Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"User@1234\",\n  \"newpassword\": \"User@123\",\n  \"name\": \"User Test\"\n}",
                 "form": []
             },
             "auth": {
@@ -70,6 +93,60 @@
             "auth": {
                 "type": "bearer",
                 "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzg0MTMxLCJleHAiOjE2OTYzNzYxMzF9.AZyIOp1sC3S-6p1WgDQthoVY9059stOsn9zlRA4uQog"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b4651c93-6cd1-4a46-bed4-844b4b72f365",
+            "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
+            "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
+            "name": "LIST ALL",
+            "url": "http://localhost:3000/users",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-09-04T01:24:32.152Z",
+            "modified": "2023-09-04T01:25:09.780Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzkwNjk5LCJleHAiOjE2OTYzODI2OTl9.f9ZGufVZqV-bb0gVRKxVx5f8rcNTk6gzh0DqRqq-hmI"
+            },
+            "tests": []
+        },
+        {
+            "_id": "80770b6f-8620-4198-99bf-3319f1d2c1b2",
+            "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
+            "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
+            "name": "LIST ONE",
+            "url": "http://localhost:3000/users/2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-09-04T01:33:23.498Z",
+            "modified": "2023-09-04T02:01:21.618Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzkwNjk5LCJleHAiOjE2OTYzODI2OTl9.f9ZGufVZqV-bb0gVRKxVx5f8rcNTk6gzh0DqRqq-hmI"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f06125a3-7261-488b-b9b1-be7f9733c65b",
+            "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
+            "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
+            "name": "DELETE",
+            "url": "http://localhost:3000/users/delete/3",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-09-04T01:36:55.635Z",
+            "modified": "2023-09-04T02:08:33.051Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzkwNjk5LCJleHAiOjE2OTYzODI2OTl9.f9ZGufVZqV-bb0gVRKxVx5f8rcNTk6gzh0DqRqq-hmI"
             },
             "tests": []
         }
