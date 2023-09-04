@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "auth-jwt-prisma-nestjs",
-    "dateExported": "2023-09-03T22:56:59.931Z",
+    "dateExported": "2023-09-04T01:09:57.037Z",
     "version": "1.1",
     "folders": [
         {
@@ -18,21 +18,21 @@
             "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
             "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
             "name": "CREATE",
-            "url": "http://localhost:3000/user",
+            "url": "http://localhost:3000/users/create",
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-09-03T22:31:19.458Z",
-            "modified": "2023-09-03T22:49:49.626Z",
+            "modified": "2023-09-04T00:04:10.877Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\": \"user2@email.com\",\n  \"password\": \"User2@123\",\n  \"name\": \"User2 Test\"\n}",
+                "raw": "{\n  \"email\": \"user3@email.com\",\n  \"password\": \"User3@123\",\n  \"name\": \"User3 Test\"\n}",
                 "form": []
             },
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzgxMzY5LCJleHAiOjE2OTYzNzMzNjl9.00VM6AOcU1WE1ab9TcczgYML4KTe3Vj-0e2nAKnVXZI"
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzg0MjgwLCJleHAiOjE2OTYzNzYyODB9.2K5qzzDrG30Qw-D0xp9hnDga0syeXs_29aYjEztW4VE"
             },
             "tests": []
         },
@@ -41,17 +41,35 @@
             "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
             "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
             "name": "LOGIN",
-            "url": "http://localhost:3000/login",
+            "url": "http://localhost:3000/auth/login",
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-09-03T22:48:29.845Z",
-            "modified": "2023-09-03T22:49:29.807Z",
+            "modified": "2023-09-03T23:35:31.698Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
                 "raw": "{\n  \"email\": \"user@email.com\",\n  \"password\": \"User@123\"\n}",
                 "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc79b855-7223-4439-96f5-926f78272278",
+            "colId": "7d553c21-1312-43ef-a9f2-c730d4013b2d",
+            "containerId": "63e0b938-9954-48d0-b7bb-86d913d86809",
+            "name": "VALIDATE",
+            "url": "http://localhost:3000/auth/validate",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-09-03T23:34:02.816Z",
+            "modified": "2023-09-03T23:35:48.304Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJuYW1lIjoiVXNlciBUZXN0IiwiaWF0IjoxNjkzNzg0MTMxLCJleHAiOjE2OTYzNzYxMzF9.AZyIOp1sC3S-6p1WgDQthoVY9059stOsn9zlRA4uQog"
             },
             "tests": []
         }
